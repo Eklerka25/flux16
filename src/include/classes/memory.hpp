@@ -12,5 +12,6 @@ class Memory {
         Byte memory[memsize];
     public:
         void Init();
+        void Store(Word adress, Byte value);
         Byte Fetch(Word adress);
 };
