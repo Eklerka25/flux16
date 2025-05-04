@@ -13,6 +13,10 @@ void Memory::Init() {
     }
 }
 
+void Memory::Store(Word adress, Byte value) {
+    memory[adress] = value;
+}
+
 Byte Memory::Fetch(Word adress) {
     return memory[adress];
 }
