@@ -7,4 +7,12 @@
 
 #include <typedefs.hpp>
 
-// ¯\_(ツ)_/¯
+void Memory::Init() {
+    for (int x = 0; x < memsize; x++) {
+        memory[x] = 0x0;
+    }
+}
+
+Byte Memory::Fetch(Word adress) {
+    return memory[adress];
+}
